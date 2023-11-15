@@ -12,20 +12,20 @@
 <button onclick="stopTime()">STOP TIME</button>
 
 <script>
-    // Create a variable to store the start time when the page loads
+
     var start = new Date();
 
     function stopTime() {
-        // Create a variable to store the stop time when the button is pressed
+
         var stop = new Date();
 
-        // Calculate the time difference in milliseconds
+
         var timeDifference = stop.getTime() - start.getTime();
 
-        // Convert milliseconds to seconds
+
         var secondsPassed = Math.floor(timeDifference / 1000);
 
-        // Display the number of seconds passed in a pop-up
+        
         alert("Seconds passed since the page loaded: " + secondsPassed);
     }
 </script>
