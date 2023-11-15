@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<title>Exercise 1</title>
+	<script type="text/javascript" src="scripts.js"></script>
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <input type="number" id="num1">
+    <span> + </span>
+    <input type="number" id="num2">
+    <button onclick="addNumbers()">Add Numbers</button>
+    <p>Total: <span id="totalOutput"></span></p>
+</form>
+
+<script>
+    function addNumbers() {
+        // Get the values from the input fields
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+
+        // Check if the input values are valid numbers
+        if (!isNaN(num1) && !isNaN(num2)) {
+            // Calculate the sum
+            var sum = num1 + num2;
+
+            // Display the sum in the output element
+            document.getElementById("totalOutput").innerText = sum;
+        } else {
+            // Display an error message if the input values are not valid numbers
+            document.getElementById("totalOutput").innerText = "Please enter valid numbers";
+        }
+    }
+</script>
+
+</body>
+</html>
