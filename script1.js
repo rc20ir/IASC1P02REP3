@@ -15,7 +15,12 @@ function fillPreventionTips() {
     "Exercise regularly to keep your body and mind healthy.",
     "Maintain a balanced diet rich in fruits, vegetables, and whole grains.",
     "Practice stress management techniques such as meditation or deep breathing.",
-    "Schedule regular health check-ups to monitor your well-being."
+    "Schedule regular health check-ups to monitor your well-being.",
+    "Manage your blood pressure and blood sugar regularly.",
+    "Stay away from any smoking, as it is a risk factor of MetS.",
+    "Limit any alcohol consumption to a moderate amount.",
+    "Get adequate sleep by aiming for 7-9 hours per night.",
+    "Get adequate exposure to sunlight for vitamin D or consider supplements if sunlight exposure is limited."
   ];
 
   const preventionSection = document.getElementById("prevention");
