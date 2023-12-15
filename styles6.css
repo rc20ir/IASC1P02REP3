@@ -106,3 +106,37 @@ section {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+/* ... (previous styles) ... */
+
+/* Updated styles for Prevention Tips page */
+section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.text-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-content {
+  flex: 1;
+  overflow: hidden;
+}
+
+.image-content img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  float: right; /* Make the images float to the right of the text */
+  margin: 0 0 20px 20px; /* Adjust margins for spacing */
+}
