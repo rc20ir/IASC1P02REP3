@@ -97,7 +97,7 @@ footer {
 /* Updated styles for the specified sections */
 section {
   padding: 2em;
-  position: relative; /* Add this for positioning */
+  position: relative;/* Add this for positioning */
 }
 
 h2 {
@@ -106,8 +106,8 @@ h2 {
 
 /* Add the following styles for the images */
 section img {
-  max-width: calc(50% - 20px); /* Ensure the image doesn't exceed its container width */
-  height: auto; /* Maintain the image's aspect ratio */
+  width: 200px; /* Ensure the image doesn't exceed its container width */
+  height: 200px; /* Maintain the image's aspect ratio */
   float: right; /* Float the image to the right */
   margin: 0 0 20px 20px; /* Adjust margins for spacing */
 }
