@@ -90,7 +90,7 @@ section {
 .image-content {
   flex: 1;
 }
-img{
-  width: 500px;
-  height: 500px;
+.image{
+  max-width: 35%;
+  max-height: 35%
 }
