@@ -8,7 +8,7 @@ body {
 
 header {
   /* Split background on the left (#333) and gradient background on the right */
-    height:150px;
+    height:100px;
     background-color: red;
     background-image: linear-gradient(to right, #008080, lightblue);
   color: #fff;
