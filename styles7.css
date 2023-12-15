@@ -94,3 +94,11 @@ section {
   max-width: 35%;
   max-height: 35%
 }
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  position: sticky;
+  bottom: 0;
+}
