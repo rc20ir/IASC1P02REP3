@@ -91,25 +91,3 @@ footer {
 .image-content {
   flex: 1;
 }
-
-/* ... (previous styles) ... */
-
-/* Updated styles for the specified sections */
-section {
-  padding: 2em;
-  position: relative;/* Add this for positioning */
-}
-
-h2 {
-  color: #008080;
-}
-
-/* Add the following styles for the images */
-section img {
-  width: 200px; /* Ensure the image doesn't exceed its container width */
-  height: 200px; /* Maintain the image's aspect ratio */
-  float: right; /* Float the image to the right */
-  margin: 0 0 20px 20px; /* Adjust margins for spacing */
-}
-
-/* ... (remaining styles) ... */
