@@ -7,11 +7,12 @@ body {
 }
 
 header {
-  font-family: Copperplate, fantasy;
-  background-color: #008080;
+  /* Split background on the left (#333) and gradient background on the right */
+  background: linear-gradient(to right, #333 50%, #4a90e2 50%);
   color: #fff;
   text-align: center;
-  padding: 1em;
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -76,21 +77,3 @@ footer {
   position: sticky;
   bottom: 0;
 }
-
-/* New styles for the modified layout */
-.content-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.text-content {
-  flex: 1;
-  margin-right: 10px; /* Adjust the margin as needed */
-}
-
-.image-content {
-  flex: 1;
-}
-
-/* ... (remaining styles) ... */
