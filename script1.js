@@ -1,4 +1,3 @@
-// Function to display current date and time
 function displayDateTime() {
   const footer = document.getElementById("footer");
   const datetimeElement = document.getElementById("datetime");
@@ -30,8 +29,27 @@ function fillPreventionTips() {
   preventionSection.innerHTML += `<p><strong>Random Tip:</strong> ${randomTip}</p>`;
 }
 
-// Run functions when the page is loaded
+// Smooth scrolling for anchor links
 document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+
+      if (targetId === 'prevention') {
+        // If the target is 'prevention', navigate to prevention.html
+        window.location.href = 'prevention.html';
+      } else {
+        // For other targets, scroll smoothly within the same page
+        document.getElementById(targetId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Run other functions when the page is loaded
   displayDateTime();
   fillPreventionTips();
 });
