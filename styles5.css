@@ -75,19 +75,3 @@ footer {
   position: sticky;
   bottom: 0;
 }
-
-/* New styles for the modified layout */
-.content-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.text-content {
-  flex: 1;
-  margin-right: 10px; /* Adjust the margin as needed */
-}
-
-.image-content {
-  flex: 1;
-}
