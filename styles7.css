@@ -84,7 +84,7 @@ section {
 
 .text-content {
   flex: 1;
-  margin-right: 10px; /* Adjust the margin as needed */
+  margin-right: 10px;
 }
 
 .image-content {
