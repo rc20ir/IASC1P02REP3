@@ -102,9 +102,6 @@ footer {
   position: sticky;
   bottom: 0;
 }
-.image-content:hover .overlay {
-  opacity: 50;
-}
 .overlay {
   position: absolute;
   top: 0;
