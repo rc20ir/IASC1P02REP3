@@ -8,7 +8,7 @@ function displayDateTime() {
   datetimeElement.innerHTML = "&copy; " + currentDateTime;
 }
 
-// Function to dynamically fill Prevention Tips
+
 function fillPreventionTips() {
   const preventionTips = [
     "Exercise regularly to keep your body and mind healthy.",
@@ -24,12 +24,12 @@ function fillPreventionTips() {
 
   const preventionSection = document.getElementById("prevention");
 
-  // Display a random prevention tip
+
   const randomTip = preventionTips[Math.floor(Math.random() * preventionTips.length)];
   preventionSection.innerHTML += `<p><strong>Random Tip:</strong> ${randomTip}</p>`;
 }
 
-// Smooth scrolling for anchor links
+
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
       const targetId = this.getAttribute('href').substring(1);
 
       if (targetId === 'prevention') {
-        // If the target is 'prevention', navigate to prevention.html
+
         window.location.href = 'prevention.html';
       } else {
-        // For other targets, scroll smoothly within the same page
+
         document.getElementById(targetId).scrollIntoView({
           behavior: 'smooth'
         });
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Run other functions when the page is loaded
+
   displayDateTime();
   fillPreventionTips();
 });
